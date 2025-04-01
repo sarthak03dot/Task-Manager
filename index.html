@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Food-Order.com</title>
+  </head>
+  <body id="home">
+    <header>
+      <!-- NavBar -->
+      <nav class="nav-bar">
+        <a href="index.html" class="logo">Food-Order.com</a>
+        <ul class="nav-link">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#About">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-class">
+        <h1>Welcome to Food-Order.com</h1>
+        <a href="#services" class="cta">Explore Service</a>
+      </section>
+
+      <!-- Services -->
+      <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+          <div class="service-item">
+            <h3>Food Delivery</h3>
+            <p>
+              Fast and reliable delivery to your doorstep, ensuring your food is
+              fresh and delicious.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Online Table Reservations</h3>
+            <p>
+              Book your favorite restaurants online with ease, avoiding long
+              waiting times.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Catering Services</h3>
+            <p>
+              Let us cater your next event with personalized menus and
+              exceptional service.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us -->
+
+      <section class="about-us" id="About">
+        <h2>About Food-Order.com</h2>
+        <p>
+          At <strong>Food-Order.com</strong>, we are passionate about connecting
+          food lovers with the best luxurious experiences. Whether it's a quick
+          meal or a grand celebration, our platform ensures seamless food
+          delivery, restaurant reservations, and event catering.
+        </p>
+        <p>
+          Established in 2020, we have served millions of happy customers and
+          partnered with hundreds of top-rated restaurants nationwide.
+        </p>
+        <p>
+          Our mission is to make food ordering fast, reliable, and delightful
+          for everyone, everywhere.
+        </p>
+      </section>
+
+      <!-- Contact Us -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="myForm" onsubmit="return validateForm()">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+          <div class="error" id="nameError"></div>
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <div class="error" id="emailError"></div>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Enter your message here"></textarea>
+          <div class="error" id="messageError"></div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2024 Food-Order.com. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
